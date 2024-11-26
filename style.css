@@ -1,0 +1,68 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff0000aa;
+    background-image: url(img/bokeh-de-ouro-com-fogo-de-artificio-para-ano-novo-ou-celebrar-o-fundo_35652-425.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo do Cartão */
+.cartao {
+    background-color: #ffffff7c;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.mensagem h1 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.img{
+    position: relative;
+    left: 300px;
+    border: solid 10px rgba(255, 255, 255, 0.34);
+    border-radius: 30000000px;
+    background-color: white;
+}
+
+@keyframes pulsar {
+    0% {
+      transform: scale(1.5); /* Tamanho original */
+    }
+    50% {
+      transform: scale(1.7); /* Aumenta o tamanho */
+    }
+    100% {
+      transform: scale(1.5); /* Retorna ao tamanho original */
+    }
+  }
+  
+  .img{
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    animation: pulsar 3s infinite; /* Animação de pulsação com duração de 1 segundo */
+  }
